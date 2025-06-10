@@ -28,7 +28,8 @@ See the application in action! This short demo showcases the user interface and 
 
 ![alt text](image1.png)
 ![alt text](image2.png)
-![alt text](image3.png)
+![alt text](image3.png) 
+
 ## The Core Pipeline
 
 The application follows a robust, multi-step process to analyze an accent:
@@ -86,56 +87,58 @@ The project is structured to separate concerns, making it clean, scalable, and e
 
 ```
 
-
 ### Folder Structure: A Deep Dive
 
--   **`app.py`**: The entry point for the Streamlit application. It orchestrates the UI and calls the utility modules to perform the backend tasks.
--   **`.streamlit/config.toml`**: Contains theme configurations to give the app a polished, custom look.
--   **`utils/`**: This directory is the application's "engine room."
-    -   **`accent_id_model_clean/`**: **Crucially**, this folder must contain the pre-trained SpeechBrain model files. The application loads the model locally from here.
-    -   **`downloader.py`**: A robust module responsible for downloading video content from a given URL.
-    -   **`audio_utils.py`**: Handles the technical task of extracting the raw audio waveform from the downloaded video file.
-    -   **`classifier.py`**: Contains the `AccentClassifier` class, which loads the local SpeechBrain model and performs the inference on an audio file.
-    -   **`logger.py`**: Sets up a standardized logger to provide clear, consistent output for debugging and monitoring.
--   **`tests/`**: Contains all automated tests.
-    -   **`fixtures/`**: Holds small, sample media files (`.mp4`, `.wav`) used as inputs for the tests, ensuring they can run offline and are deterministic.
-    -   **`test_*.py`**: Each utility module has a corresponding test file to verify its functionality in isolation.
+- **`app.py`**: The entry point for the Streamlit application. It orchestrates the UI and calls the utility modules to perform the backend tasks.
+- **`.streamlit/config.toml`**: Contains theme configurations to give the app a polished, custom look.
+- **`utils/`**: This directory is the application's "engine room."
+  - **`accent_id_model_clean/`**: **Crucially**, this folder must contain the pre-trained SpeechBrain model files. The application loads the model locally from here.
+  - **`downloader.py`**: A robust module responsible for downloading video content from a given URL.
+  - **`audio_utils.py`**: Handles the technical task of extracting the raw audio waveform from the downloaded video file.
+  - **`classifier.py`**: Contains the `AccentClassifier` class, which loads the local SpeechBrain model and performs the inference on an audio file.
+  - **`logger.py`**: Sets up a standardized logger to provide clear, consistent output for debugging and monitoring.
+- **`tests/`**: Contains all automated tests.
+  - **`fixtures/`**: Holds small, sample media files (`.mp4`, `.wav`) used as inputs for the tests, ensuring they can run offline and are deterministic.
+  - **`test_*.py`**: Each utility module has a corresponding test file to verify its functionality in isolation.
 
 ## System Requirements
 
--   **Python 3.8+**
--   **`ffmpeg`**: This is a critical system-level dependency required by `moviepy` for audio and video processing.
+- **Python 3.8+**
+- **`ffmpeg`**: This is a critical system-level dependency required by `moviepy` for audio and video processing.
 
-    -   **On macOS (via Homebrew):**
-        ```bash
-        brew install ffmpeg
-        ```
-    -   **On Debian/Ubuntu:**
-        ```bash
-        sudo apt update && sudo apt install ffmpeg
-        ```
-    -   **On Windows (via Chocolatey):**
-        ```bash
-        choco install ffmpeg
-        ```
+  - **On macOS (via Homebrew):**
+    ```bash
+    brew install ffmpeg
+    ```
+  - **On Debian/Ubuntu:**
+    ```bash
+    sudo apt update && sudo apt install ffmpeg
+    ```
+  - **On Windows (via Chocolatey):**
+    ```bash
+    choco install ffmpeg
+    ```
 
 ## Setup & Installation
 
 Follow these steps to get the project running on your local machine.
 
 1.  **Clone the repository**
+
     ```bash
     git clone https://github.com/your-username/rem_accent_checker.git
     cd rem_accent_checker
     ```
 
 2.  **Create and activate a virtual environment** (highly recommended)
+
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     ```
 
 3.  **Install all required Python packages**
+
     ```bash
     pip install -r requirements.txt
     ```
@@ -148,3 +151,4 @@ Once the setup is complete, start the Streamlit server with this command:
 
 ```bash
 streamlit run app.py
+```
