@@ -20,15 +20,17 @@ A modular, production-ready Streamlit application that analyzes and classifies E
 
 This project provides a user-friendly web interface to determine the English accent of a speaker in a video. By simply providing a public URL (from sources like YouTube), the application orchestrates a backend pipeline that downloads the video, isolates the audio track, and feeds it into a sophisticated deep learning model for classification. The results, including the predicted accent and the model's confidence, are then presented back to the user in a clean and intuitive dashboard.
 
-The entire application is built with modularity and testability in mind, following best practices for production-ready software.
+The entire application is built with modularity and testability in mind, following best practices for pr![alt text]oduction-ready software.
 
 ## Live Demo
 
 See the application in action! This short demo showcases the user interface and the end-to-end analysis process.
 
 
-![Accent Classifier Demo GIF](.20250610-1414-59.2090471.mp4)
 
+(image1.png)
+(image2.png)
+(image3.png)
 
 ## The Core Pipeline
 
