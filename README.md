@@ -57,6 +57,7 @@ This project leverages a modern stack of data science and web development librar
 
 The project is structured to separate concerns, making it clean, scalable, and easy to maintain.
 
+```
 📁rem_accent_checker/
 │
 ├── app.py # 🎈 Main Streamlit application
@@ -84,6 +85,7 @@ The project is structured to separate concerns, making it clean, scalable, and e
 │ ├── 🎥sample_video.mp4
 │ └── 🔊sample_audio.wav
 
+```
 
 
 ### Folder Structure: A Deep Dive
