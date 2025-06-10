@@ -26,12 +26,9 @@ The entire application is built with modularity and testability in mind, followi
 
 See the application in action! This short demo showcases the user interface and the end-to-end analysis process.
 
-
-
-(image1.png)
-(image2.png)
-(image3.png)
-
+![alt text](image1.png)
+![alt text](image2.png)
+![alt text](image3.png)
 ## The Core Pipeline
 
 The application follows a robust, multi-step process to analyze an accent:
