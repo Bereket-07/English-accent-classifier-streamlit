@@ -27,8 +27,8 @@ The entire application is built with modularity and testability in mind, followi
 See the application in action! This short demo showcases the user interface and the end-to-end analysis process.
 
 
-![Accent Classifier Demo GIF](20250610-1414-59.2090471.mp4)
-*(**Note**: Replace the link above with a real GIF of your application. You can create one using free tools like [LICEcap](https://www.cockos.com/licecap/) or [ScreenToGif](https://www.screentogif.com/) and upload it to your repository.)*
+![Accent Classifier Demo GIF](.20250610-1414-59.2090471.mp4)
+
 
 ## The Core Pipeline
 
